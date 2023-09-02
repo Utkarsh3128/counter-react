@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const App = () => {
-  // const counter = 15 
+  // const counter = 15
   const [counter, setCounter] = useState(15);
 
   const addValue = () => {
@@ -14,6 +14,10 @@ const App = () => {
     }
   };
 
+  const resetValue=()=>{
+    setCounter(0);
+  }
+
   return (
     <>
       <div className="main">
@@ -22,6 +26,9 @@ const App = () => {
           <div className="button">
             <button onClick={addValue}>Add Value</button>
             <button onClick={removeValue}>Remove Value</button>
+          </div>
+          <div className="reset-btn">
+            <button onClick={resetValue}>Reset</button>
           </div>
         </div>
       </div>
