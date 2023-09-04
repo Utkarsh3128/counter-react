@@ -15,7 +15,7 @@ const App = () => {
   };
 
   const resetValue=()=>{
-    setCounter(0);
+    setCounter(0); // to reset the value of counter
   }
 
   return (
